@@ -4,11 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass sass/main.scss main.css -w"
   },
   "author": "Anton Saladounikau",
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
     "node-sass": "^4.12.0"
   }
