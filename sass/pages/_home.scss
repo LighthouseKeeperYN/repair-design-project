@@ -1,3 +1,32 @@
-.site-header {
+.instagram-side-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: $margin-left-normal;
+  height: calc(100vh - 8.3rem);
+
   background-color: $color-secondary;
+
+  &__link {
+    color: $color-primary;
+
+    transform: rotate(90deg)
+  }
+}
+
+.section-landing {
+  display: flex;
+  height: calc(100vh - 8.3rem);
+
+  background: $color-secondary url(assets/img/bg-landing.png) center/cover no-repeat ;
+}
+
+.section-completed-projects {
+  height: 100.7rem;
+
+  color: $color-white;
+
+  background: $color-secondary url(assets/img/bg-completed-projects.png) bottom repeat-x;
+  
+  @include marginCollapseFix
 }

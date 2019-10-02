@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Yeseva+One&display=swap");
+@import url(assets/fonts/FuturaBookC-Regular.otf);
 *,
 *::after,
 *::before {
@@ -14,6 +16,14 @@ body {
 h1 {
   margin: 0; }
 
+ul {
+  list-style: none; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase; }
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -21,5 +31,106 @@ body {
   line-height: 1.7;
   box-sizing: border-box; }
 
-.site-header {
+.heading-primary {
+  font-family: Yeseva One, 'Times New Roman', Times, serif;
+  font-size: 4rem;
+  line-height: 5.3rem;
+  text-transform: uppercase;
+  color: #fff; }
+  .heading-primary--latte {
+    color: #E3B873; }
+
+.heading-secondary {
+  font-family: Yeseva One, 'Times New Roman', Times, serif;
+  font-size: 27px;
+  line-height: 37px;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+  color: #E3B873; }
+  .heading-secondary--line {
+    width: 16rem; }
+    .heading-secondary--line::after {
+      transform: translate(16.8rem, -2rem);
+      display: block;
+      width: 9.2rem;
+      border-top: 1px solid #E3B873;
+      content: ""; }
+
+.completed-projects {
+  display: flex;
+  flex-wrap: wrap;
+  width: 45rem;
+  margin-top: 18rem;
+  margin-left: 8.2rem; }
+  .completed-projects__text {
+    width: 100%;
+    margin: 3rem 0 5rem;
+    font-family: FuturaBookC, Helvetica, sans-serif;
+    font-size: 1.7rem;
+    line-height: 2.9rem; }
+  .completed-projects__details {
+    width: 50%;
+    height: 6.4rem;
+    margin-bottom: 3.4rem; }
+    .completed-projects__details--heading {
+      font-family: Yeseva One, "Times New Roman", Times, serif;
+      font-size: 1.8rem;
+      line-height: 2.5rem;
+      text-transform: uppercase;
+      color: #E3B873; }
+    .completed-projects__details--text {
+      margin-top: .2rem;
+      width: 50%;
+      font-family: FuturaBookC, Helvetica, sans-serif;
+      font-size: 1.5rem;
+      line-height: 2rem; }
+
+.site-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  background-color: #131313;
+  color: #fff; }
+  .site-menu__logo {
+    color: #E3B873;
+    font-size: 1.4rem; }
+  .site-menu--header {
+    height: 8.3rem; }
+  .site-menu--footer {
+    height: 13.3rem; }
+
+.site-nav {
+  width: 58rem; }
+  .site-nav__list {
+    display: flex;
+    justify-content: space-between; }
+  .site-nav__link {
+    transition: all;
+    transition-duration: .1s; }
+  .site-nav__link:hover {
+    color: #E3B873; }
+
+.instagram-side-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8.2rem;
+  height: calc(100vh - 8.3rem);
   background-color: #131313; }
+  .instagram-side-bar__link {
+    color: #E3B873;
+    transform: rotate(90deg); }
+
+.section-landing {
+  display: flex;
+  height: calc(100vh - 8.3rem);
+  background: #131313 url(assets/img/bg-landing.png) center/cover no-repeat; }
+
+.section-completed-projects {
+  height: 100.7rem;
+  color: #fff;
+  background: #131313 url(assets/img/bg-completed-projects.png) bottom repeat-x;
+  padding-top: 1px;
+  margin-top: -1px; }

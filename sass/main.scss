@@ -6,8 +6,10 @@
 @import "base/animations";
 @import "base/base";
 @import "base/typography";
+@import "base/fonts";
 
-@import "layout/header";
-@import "layout/footer";
+@import "components/completed-projects";
+
+@import "layout/header-footer";
 
 @import "pages/home";

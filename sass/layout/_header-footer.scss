@@ -1,0 +1,42 @@
+.site-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: $margin-right-normal;
+  padding-right: 10rem;
+
+  background-color: $color-secondary;
+
+  color: $color-white;
+
+  &__logo {
+    color: $color-primary;
+    font-size: 1.4rem;
+  }
+
+  &--header {
+    height: 8.3rem;
+  }
+
+  &--footer {
+    height: 13.3rem;
+  }
+}
+
+.site-nav {
+  width: 58rem;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link {
+    transition: all;
+    transition-duration: .1s;
+  }
+
+  &__link:hover {
+    color: $color-primary;
+  }
+}

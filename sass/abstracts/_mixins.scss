@@ -13,6 +13,11 @@
   transform: translate(-50%, -50%);
 }
 
+@mixin marginCollapseFix {
+  padding-top: 1px;
+  margin-top: -1px;
+}
+
 // MEDIA QUERY arguments
 // phone:        0-600
 // tab-port:     600-900
