@@ -9,6 +9,7 @@
 html {
   // This defines 1em
   font-size: 62.5%;
+  color: $color-black-light;
 }
 
 body {
@@ -26,5 +27,9 @@ ul {
 a {
   color: inherit;
   text-decoration: none;
-  text-transform: uppercase;
+}
+
+fieldset {
+  padding: 0;
+  
 }

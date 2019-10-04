@@ -1,9 +1,7 @@
 body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
+  font-family: $font-sans-serif;
   font-size: 1.6rem;
   line-height: 1.7;
-
 
   box-sizing: border-box;
 }
@@ -41,4 +39,19 @@ body {
       content: ""
     }
   }
+}
+
+.heading-small {
+  font-family: FuturaDemiC;
+  font-size: 15px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: inherit;
+}
+
+.separator-line {
+  height: 0;
+  width: 55px;
+  margin: 0 auto;
+  border-bottom: .1rem solid $color-primary;
 }

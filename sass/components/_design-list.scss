@@ -1,0 +1,19 @@
+.design-list {
+  font-family: 'ProximaNova', Verdana, sans-serif;
+  font-size: 2rem;
+  line-height: 3.4rem;
+  text-transform: capitalize;
+
+  &__item {
+    margin-bottom: 1.5rem;
+  }
+
+  &__link {
+    padding-bottom: .5rem;
+
+    &:hover {
+      color: $color-primary;
+      border-bottom: 1px solid $color-primary;
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.linked-gallery {
+
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    grid-template-rows: 11rem;
+  }
+
+  &__item {
+    width: 12.5rem;
+  }
+
+  &__item-number {
+    display: inline;
+    font-family: $font-serif;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+
+    border-bottom: 1px solid $color-primary;
+  }
+
+  &__item-text {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+
+  &__img {
+    margin-top: 5rem;
+    width: 100%;
+  }
+}

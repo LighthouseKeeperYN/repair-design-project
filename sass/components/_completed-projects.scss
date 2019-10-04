@@ -1,9 +1,14 @@
 .completed-projects {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+
   width: 45rem;
   margin-top: 18rem;
   margin-left: $margin-left-normal;
+  margin-right: 4rem;
+
 
   &__text {
     width: 100%;
@@ -34,6 +39,31 @@
       font-family: $font-sans-serif;
       font-size: 1.5rem;
       line-height: 2rem;
+    }
+  }
+}
+
+.gallery {
+  width: 84.5rem;
+  margin-top: 10rem;
+
+  &__link {
+    padding: 1rem 0;
+    margin-right: 6rem;
+
+    font-family: $font-serif;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    color: $color-white-transparent;
+    text-transform: uppercase;
+
+    transition: all;
+
+    &:hover {
+      color: $color-primary;
+      border-bottom: .1rem solid $color-primary;
+
+      transition-duration: .4s;
     }
   }
 }

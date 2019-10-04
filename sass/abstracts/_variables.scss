@@ -1,13 +1,22 @@
 $color-primary: #E3B873;
+$color-primary-dark: #d09940;
 $color-secondary: #131313;
 $color-white: #fff;
+$color-black: #181818;
+$color-black-light: #363636;
+$color-grey: #959595;
 $color-white-transparent: rgba(255, 255, 255, 0.3);
+$color-white-transparent-light: rgba(255, 255, 255, .15);
+$color-white-transparent-heavy: rgba(255, 255, 255, 0.5);
 $color-black-transparent: rgba(54, 54, 54, 0.5);
+$color-black-transparent-light: rgba(54, 54, 54, 0.3);
+$color-black-transparent-heavy: rgba(54, 54, 54, .5);
 
 $default-font-size: 2rem;
 
 $margin-left-normal: 8.2rem;
-$margin-right-normal: 10rem;
+$margin-standard: 10rem;
 
-$font-serif: Yeseva One, 'Times New Roman', Times, serif;
-$font-sans-serif: FuturaBookC, Helvetica, sans-serif;
+$font-serif: 'Yeseva One', 'Times New Roman', Times, serif;
+$font-sans-serif: 'FuturaBookC', Helvetica, sans-serif;
+$font-button: 'FuturaDemiC', Helvetica, sans-serif;

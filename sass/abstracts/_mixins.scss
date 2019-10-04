@@ -18,6 +18,12 @@
   margin-top: -1px;
 }
 
+@mixin flexColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 // MEDIA QUERY arguments
 // phone:        0-600
 // tab-port:     600-900

@@ -1,0 +1,32 @@
+.section-heading-block {
+  @include flexColumn;
+}
+
+.section-heading {
+  font-size: 2rem;
+  line-height: 2.8rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $font-serif;
+  color: $color-black;
+
+  &--white {
+    color: $color-white;
+  }
+}
+
+.section-logo {
+  margin-top: 1.3rem;
+  margin-bottom: 2.4rem;
+}
+
+.section-heading-text {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 2.7rem;
+  color: $color-black-light;
+
+  &--white {
+    color: $color-white;
+  }
+}

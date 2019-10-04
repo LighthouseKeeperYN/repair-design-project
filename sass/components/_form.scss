@@ -1,0 +1,113 @@
+.form-title {
+  font-family: $font-button;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  text-align: center;
+}
+
+.form-title-large {
+  font-family: $font-serif;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 23rem;
+
+  &--large {
+    width: 100%;
+  }
+
+  &__label {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: $color-black-transparent-heavy;
+
+    &--inverted {
+      color: $color-white-transparent-heavy;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    height: 3.3rem;
+    padding-bottom: .8rem;
+
+    border: 0;
+    border-bottom: .1rem solid $color-black-transparent-light;
+    background-color: transparent;
+
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: inherit;
+
+    &::placeholder {
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+      color: $color-black-light;
+      opacity: 1;
+    }
+
+    &:focus::placeholder {
+      opacity: 0;
+    }
+
+    &:required {
+      box-shadow: none;
+    }
+
+    &--inverted {
+      border-bottom: .1rem solid $color-white-transparent-light;
+
+      &::placeholder {
+        color: $color-white;
+      }
+    }
+  }
+}
+
+.i-agree {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: $color-black;
+
+  &--inverted {
+    color: $color-white;
+  }
+
+  &__label {
+    cursor: pointer;
+    padding-left: 2.5rem;
+  }
+
+  &__checkbox {
+    position: absolute;
+
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+
+  &__checkbox-style {
+    position: absolute;
+
+    display: inline-block;
+    height: 1.8rem;
+    width: 1.8rem;
+    margin: .2rem;
+
+    background-color: transparent;
+    border: 4px solid $color-primary;
+
+    transform: translate(-150%);
+  }
+
+  &__checkbox:checked~&__label &__checkbox-style {
+    background: $color-primary url(assets/svg/check-mark.svg) center no-repeat;
+  }
+}

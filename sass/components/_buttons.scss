@@ -1,0 +1,43 @@
+.btn {
+  width: 20rem;
+  height: 5.1rem;
+
+  border: 0;
+  background-color: $color-primary;
+  box-shadow: 0 1.5rem 1.5rem 0 rgba(227, 184, 115, .15);
+
+  font-family: $font-button;
+  color: $color-white;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  line-height: 2.6rem;
+
+  transition: all;
+  transition-duration: .15s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $color-primary-dark;
+  }
+
+  &--round {
+    border-radius: 50%;
+    box-shadow: none;
+  }
+
+  ;
+
+  &--mail {
+    display: block;
+    width: 2.8rem;
+    height: 2.8rem;
+    background: $color-primary url(assets/svg/mail-icon.svg) center no-repeat;
+  }
+
+  &--instagram {
+    display: block;
+    width: 2.8rem;
+    height: 2.8rem;
+    background: $color-primary url(assets/svg/instagram-icon.svg) center no-repeat;
+  }
+}

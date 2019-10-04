@@ -2,12 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: $margin-right-normal;
+  padding-left: $margin-standard  ;
   padding-right: 10rem;
 
   background-color: $color-secondary;
 
   color: $color-white;
+  text-transform: uppercase;
 
   &__logo {
     color: $color-primary;
@@ -38,5 +39,9 @@
 
   &__link:hover {
     color: $color-primary;
+  }
+
+  @include respond(tab-port) {
+    display: none;
   }
 }

@@ -1,0 +1,20 @@
+.design-examples {
+  width: 75.4rem;
+  display: flex;
+  justify-content: space-between;
+  transform: translate(0, -8rem);
+
+  &__block-1 {
+    @include flexColumn;
+    justify-content: space-between;
+    height: 94.6rem;
+    transform: translate(0, 4rem);
+  }
+
+  &__block-2 {
+    @include flexColumn;
+    justify-content: space-between;
+    height: 94.6rem;
+    transform: translate(0, -4rem);
+  }
+}
