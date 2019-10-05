@@ -1,0 +1,120 @@
+$gradient-stripes: linear-gradient(to bottom,
+  red 0%, red 10%,
+  transparent 10%, transparent 17%,
+  red 17%, red 26%,
+  transparent 26%, transparent 35%,
+  red 35%, red 51%,
+  transparent 51%, transparent 61%,
+  red 61%, red 76%,
+  transparent 76%, transparent 85%,
+  red 85%, red 100%);
+
+.circle-features {
+  position: relative;
+
+  width: 80rem;
+  height: 64rem;
+  overflow: hidden;
+
+  background: url(assets/img/bg-building.png) -1.7rem -4.8rem no-repeat;
+
+  &__circle {
+    position: absolute;
+    top: 0;
+
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+
+    background: linear-gradient(to left, $color-primary, transparent 78%);
+    -webkit-mask-image: $gradient-stripes;
+    mask-image: $gradient-stripes;
+
+    &__hole {
+      position: absolute;
+      left: -18rem;
+
+      height: 64rem;
+      width: 64rem;
+      border-radius: 50%;
+
+      -webkit-mask-image: radial-gradient(circle at center, transparent 69.9%, red 0%);
+      mask-image: radial-gradient(circle at center, transparent 69.9%, red 0%);
+    }
+  }
+
+  &__feature-list {
+    position: relative;
+  }
+
+  &__item {
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+
+    height: 4.2rem;
+
+    font-family: $font-sans-serif-alt;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    color: $color-black-light;
+
+    &::before {
+      position: absolute;
+      transform: translate(-5.5rem);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      width: 4.2rem;
+      height: 4.2rem;
+      border-radius: 50%;
+
+      font-family: $font-serif;
+      font-size: 1.82rem;
+      line-height: 2.5rem;
+      color: $color-white;
+
+      background-color: $color-primary;
+      box-shadow: 0 .5rem 1.5rem rgba(227, 184, 115, 0.15);
+    }
+
+    &--1 {
+      left: 38.9rem;
+      top: 6.2rem;
+
+      &::before {
+        content: "01";
+      }
+    }
+
+    &--2 {
+      left: 46.5rem;
+      top: 17.3rem;
+
+      &::before {
+        content: "02";
+      }
+    }
+
+    &--3 {
+      left: 49rem;
+      top: 33.6rem;
+
+      &::before {
+        content: "03";
+      }
+    }
+
+    &--4 {
+      left: 42.5rem;
+      top: 49.4rem;
+
+      &::before {
+        content: "04";
+      }
+    }
+  }
+}

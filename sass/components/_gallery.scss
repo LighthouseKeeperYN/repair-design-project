@@ -1,0 +1,60 @@
+.gallery {
+  width: 85rem;
+
+  overflow: hidden;
+
+  &__link {
+    padding: 1rem 0;
+    margin-right: 6rem;
+
+    font-family: $font-serif;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    color: $color-white-transparent;
+    text-transform: uppercase;
+
+    transition: all;
+    transition-duration: .4s;
+
+    &:hover {
+      color: $color-primary;
+      border-bottom: .1rem solid $color-primary;
+    }
+
+    &:first-child {
+      color: $color-primary;
+      border-bottom: .1rem solid $color-primary;
+    }
+  }
+
+  &__img-block {
+    position: relative;
+
+    display: flex;
+    justify-content: space-between;
+
+    width: 138rem;
+
+    margin-top: 4.5rem;
+
+    overflow: hidden;
+  }
+
+  &__img-container {
+    width: 67.9rem;
+    height: 47.2rem;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+
+    left: 54%;
+    top: 43%;
+  }
+}

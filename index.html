@@ -32,7 +32,7 @@
 
     <a class="site-menu__tel-link" href="tel:+79287683239">+7 (928) 768-32-39</a>
 
-    <button class="btn request-call-btn">Request a call</button>
+    <button class="btn btn--rectangular btn--smooth-corners">Request a call</button>
   </header>
 
   <main>
@@ -46,25 +46,25 @@
         <a class="instagram-side-bar__link" href="#">Instagram</a>
       </aside>
 
-      <div class="heading-block">
-        <h2 class="heading-primary">
+      <div class="section-landing__heading-block">
+        <h2 class="heading-primary section-landing__heading">
           Turnkey Repair in the city of <span class="heading-primary--latte">Rostov-on-Don</span>
         </h2>
 
-        <p class="heading-block__sub-text">Get ready-made turnkey repairs on time with work time saving up to 45 days
+        <p class="section-landing__text">Get ready-made turnkey repairs on time<br> with work time saving up to 45 days
           and
           20% from cost of materials due to the organization of work</p>
 
-        <div class="heading-block__buttons">
-          <button class="btn">Calculate the cost</button>
-          <button class="btn--transparent">Submit your application</button>
+        <div class="section-landing__buttons">
+          <button class="btn btn--rectangular btn--smooth-corners">Calculate the cost</button>
+          <button class="btn btn--rectangular btn--smooth-corners btn--transparent">Submit your application</button>
         </div>
       </div>
 
-      <a href="#" class="btn btn-scroll-down">
+      <a href="#" class="btn-scroll-down section-landing__scroll-down-btn">
         <p class="btn-scroll-down__text">Scroll down</p>
 
-        <img class="btn-scroll-down__icon" src="#" alt="Arrow down">
+        <img class="btn-scroll-down__icon" src="assets/svg/scroll-down-icon.svg" alt="Arrow down">
       </a>
     </section>
 
@@ -73,7 +73,7 @@
         ###################### -->
 
     <section class="section-completed-projects">
-      <div class="completed-projects">
+      <div class="completed-projects section-completed-projects__completed-projects">
         <h3 class="heading-secondary heading-secondary--line">Completed Projects</h3>
 
         <p class="completed-projects__text">Only a small part of the work performed by our company is presented on the
@@ -100,23 +100,49 @@
           <p class="completed-projects__details--text">Upon request</p>
         </div>
 
-        <div class="completed-projects__slider"></div>
+        <div class="slider section-completed-projects__slider">
+          <svg class="slider__arrow" width="42" height="14" viewBox="0 0 42 14" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M6.63807 13.2761L2.29917e-05 6.63808L6.63807 3.80641e-05L7.58563 0.947606L1.89516 6.63808L7.58563 12.3286L6.63807 13.2761Z" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M0.947579 5.96828L41.4556 5.96829L41.4556 7.30835L0.947578 7.30834L0.947579 5.96828Z" />
+          </svg>
+
+          <div class="slider__bullet-block">
+            <div class="slider__bullet"></div>
+            <div class="slider__bullet"></div>
+            <div class="slider__bullet"></div>
+          </div>
+
+          <svg class="slider__arrow" width="42" height="14" viewBox="0 0 42 14" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M35.0451 0L41.6831 6.63804L35.0451 13.2761L34.0975 12.3285L39.788 6.63804L34.0975 0.947567L35.0451 0Z" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M40.7356 7.30784L0.227569 7.30784L0.22757 5.96777L40.7356 5.96778L40.7356 7.30784Z" />
+          </svg>
+        </div>
       </div>
 
-      <div class="gallery">
+      <div class="gallery section-completed-projects__gallery">
         <nav class="gallery__nav">
           <a href="#" class="gallery__link">Rostov-on-Don, Admiral</a>
           <a href="#" class="gallery__link">Sochi Thieves</a>
           <a href="#" class="gallery__link">Rostov-on-Don Patriotic</a>
         </nav>
 
-        <div class="gallery">
-          <img class="gallery__img gallery__img--1" src="#" alt="Interiors">
-          <img class="gallery__img gallery__img--2" src="#" alt="Interiors">
-          <img class="gallery__img gallery__img--3" src="#" alt="Interiors">
-        </div>
+        <div class="gallery__img-block">
+          <div class="gallery__img-container">
+            <img src="assets/img/gallery-1.png" alt="Interiors">
+          </div>
 
-        <button class="gallery__btn btn btn--round btn--next"></button>
+          <div class="gallery__img-container">
+            <img src="assets/img/gallery-2.png" alt="Interiors">
+          </div>
+
+          <button class="gallery__btn btn btn--round btn--next"></button>
+        </div>
       </div>
     </section>
 
@@ -156,7 +182,7 @@
               name="user-phone" required>
           </div>
 
-          <button class="btn">Submit</button>
+          <button class="btn btn--rectangular btn--smooth-corners">Submit</button>
 
           <div class="section-online-control__i-agree i-agree">
             <input class="i-agree__checkbox" id="online-control-data-usage" type="checkbox" required>
@@ -181,7 +207,9 @@
 
       <div class="section-types-of-repair__card-block">
         <div class="section-types-of-repair__card card">
-          <img src="assets/img/repairs-room-1.jpg" alt="Room 1">
+          <div class="card__img-container">
+            <img src="assets/img/repairs-room-1.png" alt="Room 1">
+          </div>
           <div class="card__description-block">
             <h5 class="card__title">Redecorating</h5>
 
@@ -202,7 +230,9 @@
         </div>
 
         <div class="section-types-of-repair__card card">
-          <img src="assets/img/repairs-room-2.jpg" alt="Room 2">
+          <div class="card__img-container">
+            <img src="assets/img/repairs-room-2.png" alt="Room 2">
+          </div>
           <div class="card__description-block">
             <h5 class="card__title">Overhaul</h5>
 
@@ -223,7 +253,9 @@
         </div>
 
         <div class="section-types-of-repair__card card">
-          <img src="assets/img/repairs-room-3.jpg" alt="Room 3">
+          <div class="card__img-container">
+            <img src="assets/img/repairs-room-3.png" alt="Room 3">
+          </div>
           <div class="card__description-block">
             <h5 class="card__title">Designer Repair</h5>
 
@@ -252,18 +284,20 @@
     <section class="section-features">
       <h2 class="u-hidden">Features</h2>
 
-      <ul class="feature-list">
-        <li class="feature-list__item feature-list__item--1">
-          Our specialist will arrive for measurements per day<br>
-          contact, or appoint a date convenient for you
-        </li>
-        <li class="feature-list__item feature-list__item--2">Free metering</li>
-        <li class="feature-list__item feature-list__item--3">Free consultation</li>
-        <li class="feature-list__item feature-list__item--4">
-          Get a cost estimate and<br>
-          the timing of your future repairs
-        </li>
-      </ul>
+      <div class="circle-features section-features__circle-features">
+        <div class="circle-features__circle__hole">
+          <div class="circle-features__circle"></div>
+        </div>
+
+        <ul class="circle-features__feature-list">
+          <li class="circle-features__item circle-features__item--1"> Our specialist will arrive for measurements per
+            day<br> contact, or appoint a date convenient for you</li>
+          <li class="circle-features__item circle-features__item--2">Free metering</li>
+          <li class="circle-features__item circle-features__item--3">Free consultation</li>
+          <li class="circle-features__item circle-features__item--4">Get a cost estimate and<br> the timing of your
+            future repairs</li>
+        </ul>
+      </div>
 
       <div class="section-features__form-block">
         <h3 class="form-title">Leave a request for free <br> departure of the measurer</h3>
@@ -296,14 +330,14 @@
               I agree to the processing of personal data</label>
           </div>
 
-          <button class="btn section-features__btn">Call the measurer</button>
+          <button class="btn btn--rectangular section-features__btn">Call the measurer</button>
         </form>
       </div>
 
 
-      <div class="promo">
-        <img class="promo__logo " src="#" alt="Piggy Bank">
-        <p class="promo__text">Help save 10 - 20% of the cost of materials</p>
+      <div class="section-features__promo">
+        <div class="section-features__promo__icon"></div>
+        <p class="section-features__promo__text">Help save 10 - 20% of the cost of materials</p>
       </div>
     </section>
 
@@ -333,13 +367,13 @@
 
       <div class="section-design-examples__right-block design-examples  ">
         <div class="design-examples__block-1">
-          <img src="assets/img/design-example-1.jpg" alt="Room 1">
-          <img src="assets/img/design-example-2.jpg" alt="Room 2">
+          <img class="design-examples__img-1" src="assets/img/design-example-1.png " alt="Room 1">
+          <img class="design-examples__img-2" src="assets/img/design-example-2.png" alt="Room 2">
         </div>
 
         <div class="design-examples__block-2">
-          <img src="assets/img/design-example-3.jpg" alt="Room 3">
-          <img src="assets/img/design-example-4.jpg" alt="Room 4">
+          <img class="design-examples__img-3" src="assets/img/design-example-3.png" alt="Room 3">
+          <img class="design-examples__img-4" src="assets/img/design-example-4.png" alt="Room 4">
         </div>
       </div>
     </section>
@@ -362,7 +396,10 @@
       <div class="section-design-project__card-block">
 
         <div class="card">
-          <img src="assets/img/design-project-1.jpg" alt="Room 1">
+          <div class="card__img-container">
+            <img src="assets/img/design-project-1.png" alt="Room 1">
+          </div>
+
           <div class="card__description-block">
             <h5 class="card__title">Mini</h5>
 
@@ -380,7 +417,9 @@
         </div>
 
         <div class="card">
-          <img src="assets/img/design-project-2.jpg" alt="Room 2">
+          <div class="card__img-container">
+            <img src="assets/img/design-project-2.png" alt="Room 2">
+          </div>
           <div class="card__description-block">
             <h5 class="card__title">Standard</h5>
 
@@ -401,7 +440,9 @@
         </div>
 
         <div class="card">
-          <img src="assets/img/design-project-3.jpg" alt="Room 3">
+          <div class="card__img-container">
+            <img src="assets/img/design-project-3.png" alt="Room 3">
+          </div>
           <div class="card__description-block">
             <h5 class="card__title">Full</h5>
 
@@ -459,13 +500,38 @@
             </li>
           </ul>
 
-          <div class="slider sliding-list__slider"></div>
+          <div class="slider section-how-we-are-working__slider">
+            <svg class="slider__arrow" width="42" height="14" viewBox="0 0 42 14" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M6.63807 13.2761L2.29917e-05 6.63808L6.63807 3.80641e-05L7.58563 0.947606L1.89516 6.63808L7.58563 12.3286L6.63807 13.2761Z" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M0.947579 5.96828L41.4556 5.96829L41.4556 7.30835L0.947578 7.30834L0.947579 5.96828Z" />
+            </svg>
+
+            <div class="slider__bullet-block">
+              <div class="slider__bullet"></div>
+              <div class="slider__bullet"></div>
+              <div class="slider__bullet"></div>
+              <div class="slider__bullet"></div>
+              <div class="slider__bullet"></div>
+              <div class="slider__bullet"></div>
+            </div>
+
+            <svg class="slider__arrow" width="42" height="14" viewBox="0 0 42 14" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M35.0451 0L41.6831 6.63804L35.0451 13.2761L34.0975 12.3285L39.788 6.63804L34.0975 0.947567L35.0451 0Z" />
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M40.7356 7.30784L0.227569 7.30784L0.22757 5.96777L40.7356 5.96778L40.7356 7.30784Z" />
+            </svg>
+          </div>
         </div>
       </div>
 
       <div class="linked-gallery section-how-we-are-working__right-block">
         <ul class="linked-gallery__list">
-          <li class="linked-gallery__item">
+          <li class="linked-gallery__item linked-gallery__item--active">
             <p class="linked-gallery__item-number">01</p>
             <p class="linked-gallery__item-text">Departure to room measurements</p>
           </li>
@@ -496,7 +562,7 @@
           </li>
         </ul>
 
-        <img class="linked-gallery__img" src="assets/img/linked-gallery-img-1.jpg" alt="Measurer">
+        <img class="linked-gallery__img" src="assets/img/linked-gallery-img-1.png" alt="Measurer">
       </div>
     </section>
 
@@ -521,7 +587,9 @@
           <div class="card__icon">
             <img src="assets/svg/people-icon-1.svg" alt="Idea">
           </div>
-          <img src="assets/img/dmitry.jpg" alt="Dmitry Tulyakov">
+          <div class="card__img-container">
+            <img src="assets/img/dmitry.png" alt="Dmitry Tulyakov">
+          </div>
 
           <div class="card__description-block card__description-block--people">
             <p class="card__name">Dmitry tulyakov</p>
@@ -538,8 +606,9 @@
           <div class="card__icon">
             <img src="assets/svg/people-icon-2.svg" alt="Pen">
           </div>
-          <img src="assets/img/larisa.jpg" alt="Larisa Kotlyarova">
-
+          <div class="card__img-container">
+            <img src="assets/img/larisa.png" alt="Larisa Kotlyarova">
+          </div>
           <div class="card__description-block card__description-block--people">
             <p class="card__name">Larisa Kotlyarova</p>
             <p class="card__position">Designer</p>
@@ -555,8 +624,9 @@
           <div class="card__icon">
             <img src="assets/svg/people-icon-3.svg" alt="Bag">
           </div>
-          <img src="assets/img/alexey.jpg" alt="Alexey Efimov">
-
+          <div class="card__img-container">
+            <img src="assets/img/alexey.png" alt="Alexey Efimov">
+          </div>
           <div class="card__description-block card__description-block--people">
             <p class="card__name">Alexey Efimov</p>
             <p class="card__position">Foreman</p>
@@ -596,7 +666,7 @@
       <div class="section-our-clients__card-block">
         <div class="review-card">
           <div class="review-card__photo">
-            <img src="assets/img/customer-1.jpg" alt="Customer">
+            <img src="assets/img/customer-1.png" alt="Customer">
           </div>
 
           <p class="review-card__name">Fedosova Maria Konstantinovna</p>
@@ -623,7 +693,7 @@
 
         <div class="review-card">
           <div class="review-card__photo">
-            <img src="assets/img/customer-2.jpg" alt="Customer">
+            <img src="assets/img/customer-2.png" alt="Customer">
           </div>
 
           <p class="review-card__name">Afanasyev Sergey Alexandrovich</p>
@@ -650,7 +720,7 @@
 
         <div class="review-card">
           <div class="review-card__photo">
-            <img src="assets/img/customer-3.jpg" alt="Customer">
+            <img src="assets/img/customer-3.png" alt="Customer">
           </div>
 
           <p class="review-card__name">Kiriev Egor Leonidovich</p>
@@ -716,7 +786,7 @@
               I agree to the processing of personal data</label>
           </div>
 
-          <button class="btn">Submit</button>
+          <button class="btn btn--rectangular">Submit</button>
         </form>
       </div>
 
@@ -732,7 +802,7 @@
       </div>
 
       <div class="section-contacts__map-block">
-        <img class="map" src="assets/img/map.jpg" alt="Map">
+        <img class="map" src="assets/img/map.png" alt="Map">
       </div>
     </section>
   </main>
@@ -757,7 +827,7 @@
 
     <a class="site-menu__tel-link" href="tel:+79287683239">+7 (928) 768-32-39</a>
 
-    <button class="btn request-call-btn">Request a call</button>
+    <button class="btn btn--rectangular btn--smooth-corners">Request a call</button>
   </footer>
 </body>
 

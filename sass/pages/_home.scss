@@ -3,22 +3,64 @@
   align-items: center;
   justify-content: center;
   width: $margin-left-normal;
-  height: calc(100vh - 8.3rem);
+  height: calc(100vh - 8.3rem - 4.85rem);
 
   background-color: $color-secondary;
 
   &__link {
+    font-family: $font-button;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    text-align: center;
     color: $color-primary;
+    text-transform: uppercase;
 
     transform: rotate(90deg);
+
+    &:hover {
+      color: $color-white;
+    }
   }
 }
 
 .section-landing {
-  display: flex;
-  height: calc(100vh - 8.3rem);
+  position: relative;
 
-  background: $color-secondary url(assets/img/bg-landing.jpg) center/cover no-repeat;
+  display: flex;
+  height: calc(100vh - 8.3rem - 4.85rem);
+
+  color: $color-white;
+
+  background: $color-secondary url(assets/img/bg-landing.png) center/cover no-repeat;
+
+  &__heading-block {
+    margin-top: 20rem;
+    margin-left: 6rem;
+  }
+
+  &__heading {
+    width: 54rem;
+  }
+
+  &__text {
+    margin: 3rem 0 5rem;
+    width: 44rem;
+    font-family: $font-sans-serif;
+    font-size: 2.2rem;
+    line-height: 3rem;
+  }
+
+  &__scroll-down-btn {
+    position: absolute;
+    bottom: -4.85rem;
+  }
+
+  &__buttons {
+    width: 43.5rem;
+
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .section-completed-projects {
@@ -31,6 +73,20 @@
   background: $color-secondary url(assets/img/bg-city.png) bottom repeat-x;
 
   @include marginCollapseFix;
+
+  &__completed-projects {
+    margin-top: 17.8rem;
+    margin-left: $margin-left-normal;
+    margin-right: 4rem;
+  }
+
+  &__gallery {
+    margin-top: 10.6rem;
+  }
+
+  &__slider {
+    margin-top: 3rem;
+  }
 }
 
 .section-online-control {
@@ -85,7 +141,6 @@
   @include flexColumn;
 
   &__card-block {
-    height: 67rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -94,22 +149,28 @@
 }
 
 .section-features {
-  height: 102rem;
+  position: relative;
+
+  height: 92rem;
+  margin-top: 10rem;
+
   display: flex;
   justify-content: space-between;
 
   &__form-block {
     display: flex;
     flex-direction: column;
+
     width: 51rem;
     height: 50.6rem;
     padding: 2.8rem 4.9rem;
+    margin-right: $margin-standard;
+    margin-top: 5rem;
 
     color: $color-white;
 
     background-color: $color-secondary;
     box-shadow: 0 3rem 3rem 0 rgba(0, 0, 0, 0.05);
-
   }
 
   &__form {
@@ -122,13 +183,42 @@
   &__btn {
     align-self: flex-end
   }
+
+  &__promo {
+    position: absolute;
+    right: 25rem;
+    bottom: 24.2rem;
+
+    display: flex;
+    align-items: center;
+
+    &__icon {
+      width: 7.2rem;
+      height: 7.2rem;
+      border-radius: 50%;
+      margin-right: 2.4rem;
+
+      background: $color-primary url(assets/svg/piggy-bank-icon.svg) center no-repeat;
+      box-shadow: 0px 10px 20px rgba(237, 192, 120, 0.2);
+    }
+
+    &__text {
+      width: 24rem;
+
+      font-family: $font-button;
+      font-size: 2rem;
+      line-height: 2.5rem;
+      color: $color-primary;
+      text-shadow: 0 .3rem 1rem rgba(227, 184, 115, 0.15);
+    }
+  }
 }
 
 .section-design-examples {
   display: flex;
   justify-content: space-between;
 
-  background: $color-secondary url(assets/img/bg-section-design-examples.jpg) center/cover;
+  background: $color-secondary url(assets/img/bg-section-design-examples.png) center/cover;
   height: 86.4rem;
   color: $color-white;
 
@@ -152,17 +242,18 @@
 .section-design-project {
   height: 62rem;
 
-
   &__heading-block {
     margin-top: 16rem;
   }
 
   &__card-block {
     height: 78rem;
+    margin: 5rem 6rem 0;
+    overflow: hidden;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 5rem 6rem 0;
   }
 }
 
@@ -191,6 +282,10 @@
   &__heading-big {
     margin-top: 1.8rem;
     margin-bottom: 9.2rem;
+  }
+
+  &__slider {
+    margin-top: 8rem;
   }
 }
 
@@ -240,7 +335,7 @@
   @include flexColumn;
   height: 97rem;
 
-  background: $color-secondary url(assets/img/bg-skyscraper.jpg) center/cover;
+  background: $color-secondary url(assets/img/bg-skyscraper.png) center/cover;
 
   &__form-block {
     width: 88.3rem;
@@ -296,5 +391,10 @@
     overflow: hidden;
 
     box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.15);
+
+    img {
+      width: 92.5rem;
+      height: 46.5rem;
+    }
   }
 }

@@ -1,0 +1,43 @@
+.slider {
+  display: flex;
+
+  &__arrow {
+    fill: $color-white;
+
+    &:hover {
+      cursor: pointer;
+      fill: $color-primary;
+    }
+  }
+
+  &__bullet-block {
+    display: flex;
+    align-items: center;
+    margin: 0 3rem;
+  }
+
+  &__bullet {
+    display: inline-block;
+    width: .96rem;
+    height: .96rem;
+    border-radius: 50%;
+
+    background-color: $color-white;
+    opacity: .3;
+
+    &:not(:last-child) {
+      margin-right: 1.7rem;
+    }
+
+    &:first-child {
+      opacity: 1;
+    }
+
+    &:hover {
+      opacity: 1;
+      cursor: pointer;
+    }
+  }
+
+
+}

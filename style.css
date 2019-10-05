@@ -34,9 +34,6 @@ a {
   color: inherit;
   text-decoration: none; }
 
-fieldset {
-  padding: 0; }
-
 body {
   font-family: "FuturaBookC", Helvetica, sans-serif;
   font-size: 1.6rem;
@@ -93,21 +90,52 @@ body {
   font-family: ProximaNova;
   src: url(assets/fonts/ProximaNova-Regular.otf); }
 
+@font-face {
+  font-family: FuturaMediumC;
+  src: url(assets/fonts/futuramediumc.otf); }
+
 .instagram-side-bar {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 8.2rem;
-  height: calc(100vh - 8.3rem);
+  height: calc(100vh - 8.3rem - 4.85rem);
   background-color: #131313; }
   .instagram-side-bar__link {
+    font-family: "FuturaDemiC", Helvetica, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    text-align: center;
     color: #E3B873;
+    text-transform: uppercase;
     transform: rotate(90deg); }
+    .instagram-side-bar__link:hover {
+      color: #fff; }
 
 .section-landing {
+  position: relative;
   display: flex;
-  height: calc(100vh - 8.3rem);
-  background: #131313 url(assets/img/bg-landing.jpg) center/cover no-repeat; }
+  height: calc(100vh - 8.3rem - 4.85rem);
+  color: #fff;
+  background: #131313 url(assets/img/bg-landing.png) center/cover no-repeat; }
+  .section-landing__heading-block {
+    margin-top: 20rem;
+    margin-left: 6rem; }
+  .section-landing__heading {
+    width: 54rem; }
+  .section-landing__text {
+    margin: 3rem 0 5rem;
+    width: 44rem;
+    font-family: "FuturaBookC", Helvetica, sans-serif;
+    font-size: 2.2rem;
+    line-height: 3rem; }
+  .section-landing__scroll-down-btn {
+    position: absolute;
+    bottom: -4.85rem; }
+  .section-landing__buttons {
+    width: 43.5rem;
+    display: flex;
+    justify-content: space-between; }
 
 .section-completed-projects {
   height: 108rem;
@@ -117,6 +145,14 @@ body {
   background: #131313 url(assets/img/bg-city.png) bottom repeat-x;
   padding-top: 1px;
   margin-top: -1px; }
+  .section-completed-projects__completed-projects {
+    margin-top: 17.8rem;
+    margin-left: 8.2rem;
+    margin-right: 4rem; }
+  .section-completed-projects__gallery {
+    margin-top: 10.6rem; }
+  .section-completed-projects__slider {
+    margin-top: 3rem; }
 
 .section-online-control {
   height: 100rem;
@@ -155,14 +191,15 @@ body {
   flex-direction: column;
   align-items: center; }
   .section-types-of-repair__card-block {
-    height: 67rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 90%; }
 
 .section-features {
-  height: 102rem;
+  position: relative;
+  height: 92rem;
+  margin-top: 10rem;
   display: flex;
   justify-content: space-between; }
   .section-features__form-block {
@@ -171,6 +208,8 @@ body {
     width: 51rem;
     height: 50.6rem;
     padding: 2.8rem 4.9rem;
+    margin-right: 10rem;
+    margin-top: 5rem;
     color: #fff;
     background-color: #131313;
     box-shadow: 0 3rem 3rem 0 rgba(0, 0, 0, 0.05); }
@@ -181,11 +220,31 @@ body {
     height: 100%; }
   .section-features__btn {
     align-self: flex-end; }
+  .section-features__promo {
+    position: absolute;
+    right: 25rem;
+    bottom: 24.2rem;
+    display: flex;
+    align-items: center; }
+    .section-features__promo__icon {
+      width: 7.2rem;
+      height: 7.2rem;
+      border-radius: 50%;
+      margin-right: 2.4rem;
+      background: #E3B873 url(assets/svg/piggy-bank-icon.svg) center no-repeat;
+      box-shadow: 0px 10px 20px rgba(237, 192, 120, 0.2); }
+    .section-features__promo__text {
+      width: 24rem;
+      font-family: "FuturaDemiC", Helvetica, sans-serif;
+      font-size: 2rem;
+      line-height: 2.5rem;
+      color: #E3B873;
+      text-shadow: 0 0.3rem 1rem rgba(227, 184, 115, 0.15); }
 
 .section-design-examples {
   display: flex;
   justify-content: space-between;
-  background: #131313 url(assets/img/bg-section-design-examples.jpg) center/cover;
+  background: #131313 url(assets/img/bg-section-design-examples.png) center/cover;
   height: 86.4rem;
   color: #fff;
   padding-top: 1px;
@@ -205,10 +264,11 @@ body {
     margin-top: 16rem; }
   .section-design-project__card-block {
     height: 78rem;
+    margin: 5rem 6rem 0;
+    overflow: hidden;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 5rem 6rem 0; }
+    justify-content: space-evenly; }
 
 .section-how-we-are-working {
   height: 161.5rem;
@@ -229,6 +289,8 @@ body {
   .section-how-we-are-working__heading-big {
     margin-top: 1.8rem;
     margin-bottom: 9.2rem; }
+  .section-how-we-are-working__slider {
+    margin-top: 8rem; }
 
 .section-our-team {
   display: flex;
@@ -268,7 +330,7 @@ body {
   flex-direction: column;
   align-items: center;
   height: 97rem;
-  background: #131313 url(assets/img/bg-skyscraper.jpg) center/cover; }
+  background: #131313 url(assets/img/bg-skyscraper.png) center/cover; }
   .section-contacts__form-block {
     width: 88.3rem;
     height: 44.5rem;
@@ -307,16 +369,54 @@ body {
     height: 46.5rem;
     overflow: hidden;
     box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.15); }
+    .section-contacts__map-block img {
+      width: 92.5rem;
+      height: 46.5rem; }
+
+.gallery {
+  width: 85rem;
+  overflow: hidden; }
+  .gallery__link {
+    padding: 1rem 0;
+    margin-right: 6rem;
+    font-family: "Yeseva One", "Times New Roman", Times, serif;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+    color: rgba(255, 255, 255, 0.3);
+    text-transform: uppercase;
+    transition: all;
+    transition-duration: .4s; }
+    .gallery__link:hover {
+      color: #E3B873;
+      border-bottom: 0.1rem solid #E3B873; }
+    .gallery__link:first-child {
+      color: #E3B873;
+      border-bottom: 0.1rem solid #E3B873; }
+  .gallery__img-block {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 138rem;
+    margin-top: 4.5rem;
+    overflow: hidden; }
+  .gallery__img-container {
+    width: 67.9rem;
+    height: 47.2rem;
+    overflow: hidden; }
+    .gallery__img-container img {
+      width: 100%;
+      height: 100%; }
+  .gallery__btn {
+    position: absolute;
+    left: 54%;
+    top: 43%; }
 
 .completed-projects {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   align-content: flex-start;
-  width: 45rem;
-  margin-top: 18rem;
-  margin-left: 8.2rem;
-  margin-right: 4rem; }
+  width: 45rem; }
   .completed-projects__text {
     width: 100%;
     margin: 3rem 0 5rem;
@@ -340,23 +440,6 @@ body {
       font-size: 1.5rem;
       line-height: 2rem; }
 
-.gallery {
-  width: 84.5rem;
-  margin-top: 10rem; }
-  .gallery__link {
-    padding: 1rem 0;
-    margin-right: 6rem;
-    font-family: "Yeseva One", "Times New Roman", Times, serif;
-    font-size: 1.4rem;
-    line-height: 1.9rem;
-    color: rgba(255, 255, 255, 0.3);
-    text-transform: uppercase;
-    transition: all; }
-    .gallery__link:hover {
-      color: #E3B873;
-      border-bottom: 0.1rem solid #E3B873;
-      transition-duration: .4s; }
-
 .section-heading-block {
   display: flex;
   flex-direction: column;
@@ -373,6 +456,8 @@ body {
     color: #fff; }
 
 .section-logo {
+  width: 11.4rem;
+  height: 2.9rem;
   margin-top: 1.3rem;
   margin-bottom: 2.4rem; }
 
@@ -456,13 +541,12 @@ body {
     margin: .2rem;
     background-color: transparent;
     border: 4px solid #E3B873;
+    border-radius: .1rem;
     transform: translate(-150%); }
   .i-agree__checkbox:checked ~ .i-agree__label .i-agree__checkbox-style {
     background: #E3B873 url(assets/svg/check-mark.svg) center no-repeat; }
 
 .btn {
-  width: 20rem;
-  height: 5.1rem;
   border: 0;
   background-color: #E3B873;
   box-shadow: 0 1.5rem 1.5rem 0 rgba(227, 184, 115, 0.15);
@@ -476,9 +560,24 @@ body {
   .btn:hover {
     cursor: pointer;
     background-color: #d09940; }
+  .btn--rectangular {
+    width: 20.7rem;
+    height: 5.1rem; }
   .btn--round {
     border-radius: 50%;
     box-shadow: none; }
+  .btn--transparent {
+    background-color: transparent;
+    border: .1rem solid white;
+    box-shadow: none; }
+    .btn--transparent:hover {
+      background-color: rgba(255, 255, 255, 0.3); }
+  .btn--smooth-corners {
+    border-radius: .3rem; }
+  .btn--next {
+    width: 5.5rem;
+    height: 5.5rem;
+    background: #E3B873 url(assets/svg/arrow-right.svg) center no-repeat; }
   .btn--mail {
     display: block;
     width: 2.8rem;
@@ -490,10 +589,29 @@ body {
     height: 2.8rem;
     background: #E3B873 url(assets/svg/instagram-icon.svg) center no-repeat; }
 
+.btn-scroll-down {
+  width: 24.7rem;
+  height: 9.7rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Yeseva One", "Times New Roman", Times, serif;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  text-transform: uppercase;
+  background-color: #131313;
+  transition: all .2s; }
+  .btn-scroll-down:hover {
+    transform: translate(0, -0.5rem);
+    background-color: #181818; }
+
 .card {
   position: relative;
   width: 39.2rem;
   overflow: hidden; }
+  .card__img-container img {
+    width: 100%;
+    height: 100%; }
   .card--people {
     box-sizing: initial;
     width: 27.2rem;
@@ -577,6 +695,9 @@ body {
     height: 7.6rem;
     border-radius: 50%;
     overflow: hidden; }
+    .review-card__photo img {
+      width: 100%;
+      height: 100%; }
   .review-card__name {
     width: 18rem;
     margin: 1.8rem 0 2.4rem;
@@ -639,6 +760,18 @@ body {
     justify-content: space-between;
     height: 94.6rem;
     transform: translate(0, -4rem); }
+  .design-examples__img-1 {
+    width: 35.4rem;
+    height: 55.7rem; }
+  .design-examples__img-2 {
+    width: 35.4rem;
+    height: 35rem; }
+  .design-examples__img-3 {
+    width: 35.4rem;
+    height: 27.5rem; }
+  .design-examples__img-4 {
+    width: 35.4rem;
+    height: 62.6rem; }
 
 .sliding-list__page {
   font-family: "Yeseva One", "Times New Roman", Times, serif;
@@ -665,10 +798,18 @@ body {
   grid-template-rows: 11rem; }
 
 .linked-gallery__item {
-  width: 12.5rem; }
+  width: 12.5rem;
+  opacity: .3; }
+  .linked-gallery__item:hover {
+    cursor: pointer;
+    color: #E3B873;
+    opacity: 1; }
+  .linked-gallery__item--active {
+    opacity: 1; }
 
 .linked-gallery__item-number {
-  display: inline;
+  display: inline-block;
+  margin-bottom: 1rem;
   font-family: "Yeseva One", "Times New Roman", Times, serif;
   font-size: 1.5rem;
   line-height: 1.8rem;
@@ -682,6 +823,102 @@ body {
   margin-top: 5rem;
   width: 100%; }
 
+.circle-features {
+  position: relative;
+  width: 80rem;
+  height: 64rem;
+  overflow: hidden;
+  background: url(assets/img/bg-building.png) -1.7rem -4.8rem no-repeat; }
+  .circle-features__circle {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background: linear-gradient(to left, #E3B873, transparent 78%);
+    -webkit-mask-image: linear-gradient(to bottom, red 0%, red 10%, transparent 10%, transparent 17%, red 17%, red 26%, transparent 26%, transparent 35%, red 35%, red 51%, transparent 51%, transparent 61%, red 61%, red 76%, transparent 76%, transparent 85%, red 85%, red 100%);
+    mask-image: linear-gradient(to bottom, red 0%, red 10%, transparent 10%, transparent 17%, red 17%, red 26%, transparent 26%, transparent 35%, red 35%, red 51%, transparent 51%, transparent 61%, red 61%, red 76%, transparent 76%, transparent 85%, red 85%, red 100%); }
+    .circle-features__circle__hole {
+      position: absolute;
+      left: -18rem;
+      height: 64rem;
+      width: 64rem;
+      border-radius: 50%;
+      -webkit-mask-image: radial-gradient(circle at center, transparent 69.9%, red 0%);
+      mask-image: radial-gradient(circle at center, transparent 69.9%, red 0%); }
+  .circle-features__feature-list {
+    position: relative; }
+  .circle-features__item {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    height: 4.2rem;
+    font-family: "FuturaMediumC", Helvetica, sans-serif;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    color: #363636; }
+    .circle-features__item::before {
+      position: absolute;
+      transform: translate(-5.5rem);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 4.2rem;
+      height: 4.2rem;
+      border-radius: 50%;
+      font-family: "Yeseva One", "Times New Roman", Times, serif;
+      font-size: 1.82rem;
+      line-height: 2.5rem;
+      color: #fff;
+      background-color: #E3B873;
+      box-shadow: 0 0.5rem 1.5rem rgba(227, 184, 115, 0.15); }
+    .circle-features__item--1 {
+      left: 38.9rem;
+      top: 6.2rem; }
+      .circle-features__item--1::before {
+        content: "01"; }
+    .circle-features__item--2 {
+      left: 46.5rem;
+      top: 17.3rem; }
+      .circle-features__item--2::before {
+        content: "02"; }
+    .circle-features__item--3 {
+      left: 49rem;
+      top: 33.6rem; }
+      .circle-features__item--3::before {
+        content: "03"; }
+    .circle-features__item--4 {
+      left: 42.5rem;
+      top: 49.4rem; }
+      .circle-features__item--4::before {
+        content: "04"; }
+
+.slider {
+  display: flex; }
+  .slider__arrow {
+    fill: #fff; }
+    .slider__arrow:hover {
+      cursor: pointer;
+      fill: #E3B873; }
+  .slider__bullet-block {
+    display: flex;
+    align-items: center;
+    margin: 0 3rem; }
+  .slider__bullet {
+    display: inline-block;
+    width: .96rem;
+    height: .96rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: .3; }
+    .slider__bullet:not(:last-child) {
+      margin-right: 1.7rem; }
+    .slider__bullet:first-child {
+      opacity: 1; }
+    .slider__bullet:hover {
+      opacity: 1;
+      cursor: pointer; }
+
 .site-menu {
   display: flex;
   justify-content: space-between;
@@ -694,6 +931,8 @@ body {
   .site-menu__logo {
     color: #E3B873;
     font-size: 1.4rem; }
+  .site-menu__tel-link:hover {
+    color: #E3B873; }
   .site-menu--header {
     height: 8.3rem; }
   .site-menu--footer {
@@ -704,10 +943,9 @@ body {
   .site-nav__list {
     display: flex;
     justify-content: space-between; }
-  .site-nav__link {
-    transition: all;
-    transition-duration: .1s; }
   .site-nav__link:hover {
+    color: #E3B873; }
+  .site-nav__item:first-child {
     color: #E3B873; }
   @media (max-width: 56.25em) {
     .site-nav {

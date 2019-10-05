@@ -8,10 +8,23 @@
 
   &__item {
     width: 12.5rem;
+    opacity: .3;
+
+    &:hover {
+      cursor: pointer;
+      color: $color-primary;
+      opacity: 1;
+    }
+
+    &--active {
+      opacity: 1;
+    }
   }
 
   &__item-number {
-    display: inline;
+    display: inline-block;
+    margin-bottom: 1rem;
+    
     font-family: $font-serif;
     font-size: 1.5rem;
     line-height: 1.8rem;
@@ -22,6 +35,8 @@
   &__item-text {
     font-size: 1.5rem;
     line-height: 1.8rem;
+
+
   }
 
   &__img {

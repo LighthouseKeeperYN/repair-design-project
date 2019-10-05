@@ -4,7 +4,12 @@
   width: 39.2rem;
   overflow: hidden;
 
-
+  &__img-container {
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
 
   &--people {
     box-sizing: initial;
@@ -121,6 +126,11 @@
     height: 7.6rem;
     border-radius: 50%;
     overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   &__name {

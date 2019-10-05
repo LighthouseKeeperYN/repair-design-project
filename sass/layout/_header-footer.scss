@@ -15,6 +15,10 @@
     font-size: 1.4rem;
   }
 
+  &__tel-link:hover {
+    color: $color-primary;
+  }
+
   &--header {
     height: 8.3rem;
   }
@@ -32,14 +36,15 @@
     justify-content: space-between;
   }
 
-  &__link {
-    transition: all;
-    transition-duration: .1s;
-  }
-
   &__link:hover {
     color: $color-primary;
+    
   }
+
+  &__item:first-child {
+    color: $color-primary;
+  }
+
 
   @include respond(tab-port) {
     display: none;

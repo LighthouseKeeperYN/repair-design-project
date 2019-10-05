@@ -1,7 +1,4 @@
 .btn {
-  width: 20rem;
-  height: 5.1rem;
-
   border: 0;
   background-color: $color-primary;
   box-shadow: 0 1.5rem 1.5rem 0 rgba(227, 184, 115, .15);
@@ -20,12 +17,35 @@
     background-color: $color-primary-dark;
   }
 
+  &--rectangular {
+    width: 20.7rem;
+    height: 5.1rem;
+  }
+
   &--round {
     border-radius: 50%;
     box-shadow: none;
   }
 
-  ;
+  &--transparent {
+    background-color: transparent;
+    border: .1rem solid white;
+    box-shadow: none;
+
+    &:hover {
+      background-color: $color-white-transparent;
+    }
+  }
+
+  &--smooth-corners {
+    border-radius: .3rem;
+  }
+
+  &--next {
+    width: 5.5rem;
+    height: 5.5rem;
+    background: $color-primary url(assets/svg/arrow-right.svg) center no-repeat;
+  }
 
   &--mail {
     display: block;
@@ -39,5 +59,28 @@
     width: 2.8rem;
     height: 2.8rem;
     background: $color-primary url(assets/svg/instagram-icon.svg) center no-repeat;
+  }
+}
+
+.btn-scroll-down {
+  width: 24.7rem;
+  height: 9.7rem;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  font-family: $font-serif;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  text-transform: uppercase;
+
+  background-color: $color-secondary;
+
+  transition: all .2s;
+
+  &:hover {
+    transform: translate(0, -.5rem);
+    background-color: $color-black;
   }
 }
