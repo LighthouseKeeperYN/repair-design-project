@@ -1,9 +1,7 @@
 .site-menu {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  padding-left: $margin-standard  ;
-  padding-right: 10rem;
 
   background-color: $color-secondary;
 
@@ -26,6 +24,16 @@
   &--footer {
     height: 13.3rem;
   }
+
+  &__btn {
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  @include respond(phone) {
+    justify-content: space-around;
+  }
 }
 
 .site-nav {
@@ -38,7 +46,7 @@
 
   &__link:hover {
     color: $color-primary;
-    
+
   }
 
   &__item:first-child {

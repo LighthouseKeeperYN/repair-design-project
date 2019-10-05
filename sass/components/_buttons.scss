@@ -83,4 +83,8 @@
     transform: translate(0, -.5rem);
     background-color: $color-black;
   }
+
+  @include respond(phone) {
+    display: none;
+  }
 }
