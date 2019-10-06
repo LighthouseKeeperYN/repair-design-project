@@ -20,6 +20,10 @@
   &--rectangular {
     width: 20.7rem;
     height: 5.1rem;
+
+    @include respond(phone) {
+      width: 100%;
+    }
   }
 
   &--round {
@@ -35,6 +39,21 @@
     &:hover {
       background-color: $color-white-transparent;
     }
+
+    &--cut-text {
+      display: none;
+    }
+
+    @include respond(tab-port) {
+      
+      &--cut-text {
+        display: inline;
+      }
+
+      &--full-text {
+        display: none;
+      }
+    }
   }
 
   &--smooth-corners {
@@ -44,7 +63,13 @@
   &--next {
     width: 5.5rem;
     height: 5.5rem;
-    background: $color-primary url(assets/svg/arrow-right.svg) center no-repeat;
+
+    background: $color-primary url(assets/svg/arrow-right.svg) center/25% no-repeat;
+
+    @include respond(phone) {
+      width: 3.6rem;
+      height: 3.6rem;
+    }
   }
 
   &--mail {
@@ -84,7 +109,7 @@
     background-color: $color-black;
   }
 
-  @include respond(phone) {
+  @include respond(tab-port) {
     display: none;
   }
 }

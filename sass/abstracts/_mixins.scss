@@ -25,16 +25,16 @@
 }
 
 // MEDIA QUERY arguments
-// phone:        0-600
-// tab-port:     600-900
-// tab-land:     900-1200
+// phone:        0-650
+// tab-port:     650-1060
+// tab-land:     1060-1200
 // widescreen:   1800+
 
 // 1em - 16px;
 
 @mixin respond ($breakpoint) {
   @if $breakpoint == phone {
-    @media (max-width: 37.5em) { @content };
+    @media (max-width: 40.65em) { @content };
   }
   @if $breakpoint == tab-port {
     @media (max-width: 66.25em) { @content };

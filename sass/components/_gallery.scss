@@ -57,4 +57,40 @@
     left: 54%;
     top: 43%;
   }
+
+  @include respond(phone) {
+    display: none;
+  }
+}
+
+.gallery-phone {
+  position: relative;
+
+  display: none;
+
+  @include respond(tab-port) {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+
+    &__btn-next {
+      position: absolute;
+      top: 50%;
+      right: 1.4rem;
+      transform: translate(0, -50%);
+    }
+
+    &__btn-prev {
+      position: absolute;
+      top: 50%;
+      left: 1.4rem;
+      transform: translate(0, -50%) rotate(180deg);
+    }
+  }
 }

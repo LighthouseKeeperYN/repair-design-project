@@ -69,6 +69,29 @@
       }
     }
   }
+
+  @include respond(phone) {
+    width: 100%;
+  }
+
+  @include respond(tab-port) {
+
+    &__label {
+      color: $color-white-transparent-heavy;
+    }
+
+    &__input {
+      border-bottom: .1rem solid $color-white-transparent-heavy;
+
+      &::placeholder {
+        color: $color-white;
+      }
+
+      &--inverted {
+        border-bottom: .1rem solid $color-white-transparent-heavy; //rgb(195, 195, 195)
+      }
+    }
+  }
 }
 
 .i-agree {
@@ -110,5 +133,9 @@
 
   &__checkbox:checked~&__label &__checkbox-style {
     background: $color-primary url(assets/svg/check-mark.svg) center no-repeat;
+  }
+
+  @include respond(tab-port) {
+    color: $color-white;
   }
 }

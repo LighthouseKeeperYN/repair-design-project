@@ -39,6 +39,8 @@
   }
 
   &__title {
+    margin-bottom: 1rem;
+
     font-family: $font-serif;
     font-size: 1.8rem;
     line-height: 2.5rem;
@@ -48,7 +50,7 @@
   &__list {
     font-size: 1.5rem;
     line-height: 2.5rem;
-    color: #959595;
+    color: $color-grey;
 
     list-style: initial;
     padding-left: 1.6rem;
@@ -99,6 +101,65 @@
     height: 7rem;
     background-color: $color-primary;
     box-shadow: 0 .5rem 2rem rgba(227, 184, 115, 0.5);
+  }
+
+  &__ellipsis {
+    display: none;
+  }
+
+  @include respond(tab-port) {
+    width: 34rem;
+
+    &--people {
+      width: 30.4rem;
+      transform: translate(-1.2rem);
+      padding: 0 0 0 6rem;
+    }
+
+    &__description-block {
+      position: relative;
+      margin: 0 0;
+
+      width: 27rem;
+
+      &--people {
+        margin: 0 auto;
+        width: 23.3rem;
+      }
+    }
+
+    &__title {
+      font-size: 1.5rem;
+      line-height: 2.1rem;
+    }
+
+    &__list {
+      font-size: 1.3rem;
+      line-height: 2.2rem;
+    }
+
+    &__tag {
+      width: 19rem;
+      height: 4rem;
+  
+      font-size: 1.5rem;
+      line-height: 2.1rem;
+  
+      &--people {
+        width: 23.3rem;
+  
+        font-size: 1.3rem;
+        line-height: 2rem;
+      }
+    }
+
+    &__cut {
+      display: none;
+    }
+
+    &__ellipsis {
+      display: initial;
+    }
   }
 }
 

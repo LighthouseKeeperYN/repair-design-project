@@ -51,13 +51,21 @@
           Turnkey Repair in the city of <span class="heading-primary--latte">Rostov-on-Don</span>
         </h2>
 
-        <p class="section-landing__text">Get ready-made turnkey repairs on time<br> with work time saving up to 45 days
+        <p class="section-landing__text">Get ready-made turnkey repairs on time with work time saving up to 45 days
           and
           20% from cost of materials due to the organization of work</p>
 
         <div class="section-landing__buttons">
           <button class="btn btn--rectangular btn--smooth-corners">Calculate the cost</button>
-          <button class="btn btn--rectangular btn--smooth-corners btn--transparent">Submit your application</button>
+          <button class="btn btn--rectangular btn--smooth-corners btn--transparent">
+            <span class="btn--transparent--full-text">
+              Submit your application
+            </span>
+
+            <span class="btn--transparent--cut-text">
+              Application
+            </span>
+          </button>
         </div>
       </div>
 
@@ -74,11 +82,17 @@
 
     <section class="section-completed-projects">
       <div class="completed-projects section-completed-projects__completed-projects">
-        <h3 class="heading-secondary heading-secondary--line">Completed Projects</h3>
+        <h3 class="heading-secondary heading-secondary--line completed-projects__heading">Completed Projects</h3>
 
         <p class="completed-projects__text">Only a small part of the work performed by our company is presented on the
           site. For 14 years on in the construction
           market we have made happy more than 1000 families</p>
+
+        <div class="section-completed-projects__gallery-phone gallery-phone">
+          <button class="gallery-phone__btn-next btn btn--round btn--next"></button>
+          <button class="gallery-phone__btn-prev btn btn--round btn--next"></button>
+          <img src="assets/img//gallery-phone-1.png" alt="Interiors">
+        </div>
 
         <div class="completed-projects__details">
           <h5 class="completed-projects__details--heading">City:</h5>
@@ -157,7 +171,7 @@
         <img class="section-logo" src="assets/svg/camera.svg" alt="Security Camera">
       </div>
 
-      <iframe class="video section-online-control__video" src="https://www.youtube-nocookie.com/embed/TgWlT5YFbh4"
+      <iframe class="section-online-control__video" src="https://www.youtube-nocookie.com/embed/TgWlT5YFbh4"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
       <div class="separator-line section-online-control__separator-line"></div>
@@ -170,7 +184,7 @@
 
       <div class="section-online-control__form-block">
         <form class="section-online-control__form" name="online-control-form" action="#" method="POST">
-          <div class="input-field ">
+          <div class="input-field section-online-control__input-field">
             <label class="input-field__label" for="online-control-username">Name</label>
             <input class="input-field__input" id="online-control-username" type="text" placeholder="What is your name:"
               name="user-name" required>
@@ -182,7 +196,7 @@
               name="user-phone" required>
           </div>
 
-          <button class="btn btn--rectangular btn--smooth-corners">Submit</button>
+          <button class="section-online-control__btn btn btn--rectangular btn--smooth-corners">Submit</button>
 
           <div class="section-online-control__i-agree i-agree">
             <input class="i-agree__checkbox" id="online-control-data-usage" type="checkbox" required>
@@ -199,17 +213,18 @@
         ###################### -->
 
     <section class="section-types-of-repair">
-      <div class="section-heading-block">
+      <div class="section-heading-block section-types-of-repair__section-heading-block">
         <h2 class="section-heading">Types of repair</h2>
 
         <img class="section-logo section-logo__types-of-repair" src="assets/svg/tools.svg" alt="Tools">
       </div>
 
       <div class="section-types-of-repair__card-block">
-        <div class="section-types-of-repair__card card">
+        <div class="card">
           <div class="card__img-container">
             <img src="assets/img/repairs-room-1.png" alt="Room 1">
           </div>
+
           <div class="card__description-block">
             <h5 class="card__title">Redecorating</h5>
 
@@ -229,10 +244,11 @@
           </div>
         </div>
 
-        <div class="section-types-of-repair__card card">
+        <div class="card">
           <div class="card__img-container">
             <img src="assets/img/repairs-room-3.png" alt="Room 3">
           </div>
+
           <div class="card__description-block">
             <h5 class="card__title">Overhaul</h5>
 
@@ -252,10 +268,11 @@
           </div>
         </div>
 
-        <div class="section-types-of-repair__card card">
+        <div class="card">
           <div class="card__img-container">
             <img src="assets/img/repairs-room-2.png" alt="Room 2">
           </div>
+
           <div class="card__description-block">
             <h5 class="card__title">Designer Repair</h5>
 
@@ -348,7 +365,14 @@
 
     <section class="section-design-examples">
       <div class="section-design-examples__left-block">
+
         <h2 class="heading-secondary section-design-examples__heading">We realize your wildest fantasies</h2>
+
+        <div class="section-design-examples__gallery-phone gallery-phone">
+          <button class="gallery-phone__btn-next btn btn--round btn--next"></button>
+          <button class="gallery-phone__btn-prev btn btn--round btn--next"></button>
+          <img src="assets/img/gallery-phone-2.png" alt="Interiors">
+        </div>
 
         <ul class="design-list section-design-examples__list">
           <li class="design-list__item"><a class="design-list__link" href="#">American classic</a></li>
@@ -365,7 +389,7 @@
         </ul>
       </div>
 
-      <div class="section-design-examples__right-block design-examples  ">
+      <div class="section-design-examples__right-block design-examples">
         <div class="design-examples__block-1">
           <img class="design-examples__img-1" src="assets/img/design-example-1.png " alt="Room 1">
           <img class="design-examples__img-2" src="assets/img/design-example-2.png" alt="Room 2">
@@ -384,7 +408,7 @@
 
     <section class="section-design-project">
       <div class="section-heading-block section-design-project__heading-block">
-        <h2 class="section-heading">Design Project</h2>
+        <h2 class="section-design-project__section-heading section-heading">Design Project</h2>
 
         <img class="section-logo " src="assets/svg/pen-and-ruler.svg" alt="Pen and ruler">
 
@@ -395,7 +419,7 @@
 
       <div class="section-design-project__card-block">
 
-        <div class="card">
+        <div class="section-design-project__card card">
           <div class="card__img-container">
             <img src="assets/img/design-project-1.png" alt="Room 1">
           </div>
@@ -416,7 +440,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card section-design-project__card">
           <div class="card__img-container">
             <img src="assets/img/design-project-2.png" alt="Room 2">
           </div>
@@ -439,7 +463,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card section-design-project__card">
           <div class="card__img-container">
             <img src="assets/img/design-project-3.png" alt="Room 3">
           </div>
@@ -453,12 +477,12 @@
               <li>Plan of ceilings</li>
               <li>Floor Plan</li>
               <li>Electricians plan</li>
-              <li>Lighting plan</li>
-              <li>Wall reamers</li>
-              <li>3D visualization</li>
-              <li>Bill of materials</li>
-              <li>Departure for a selection of materials</li>
-              <li>Furniture selection</li>
+              <li>Lighting plan<span class="card__ellipsis">...</span></li>
+              <li class="card__cut">Wall reamers</li>
+              <li class="card__cut">3D visualization</li>
+              <li class="card__cut">Bill of materials</li>
+              <li class="card__cut">Departure for a selection of materials</li>
+              <li class="card__cut">Furniture selection</li>
             </ul>
 
             <div class="card__tag">
@@ -583,7 +607,7 @@
       </div>
 
       <div class="section-our-team__card-block">
-        <div class="card card--people">
+        <div class="section-our-team__card card card--people">
           <div class="card__icon">
             <img src="assets/svg/people-icon-1.svg" alt="Idea">
           </div>
@@ -602,7 +626,7 @@
         </div>
 
 
-        <div class="card card--people">
+        <div class="section-our-team__card card card--people">
           <div class="card__icon">
             <img src="assets/svg/people-icon-2.svg" alt="Pen">
           </div>
@@ -620,7 +644,7 @@
         </div>
 
 
-        <div class="card card--people">
+        <div class="section-our-team__card card card--people">
           <div class="card__icon">
             <img src="assets/svg/people-icon-3.svg" alt="Bag">
           </div>
@@ -755,6 +779,7 @@
 
       <div class="section-contacts__form-block">
         <h3 class="form-title-large">Have any questions?</h3>
+
         <form class="section-contacts__form" name="support-form" action="#" method="POST">
           <div class="section-contacts__form-block__field-wrapper">
             <div class="input-field">
@@ -779,7 +804,7 @@
               placeholder="I want to know:" name="user-email" required>
           </div>
 
-          <div class="i-agree i-agree--inverted">
+          <div class="section-contacts__i-agree i-agree i-agree--inverted">
             <input class="i-agree__checkbox" id="support-form-data-usage" type="checkbox" required>
             <label class="i-agree__label" for="support-form-data-usage">
               <span class="i-agree__checkbox-style"></span>
@@ -802,7 +827,7 @@
       </div>
 
       <div class="section-contacts__map-block">
-        <img class="map" src="assets/img/map.png" alt="Map">
+        <img class="section-contacts_map" src="assets/img/map.png" alt="Map">
       </div>
     </section>
   </main>
