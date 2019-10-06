@@ -1,11 +1,13 @@
 .instagram-side-bar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: $margin-left-normal;
   height: calc(100vh - 8.3rem - 4.85rem);
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   background-color: $color-secondary;
+  box-shadow: 0 -1px 0 0 $color-secondary;
 
   &__link {
     font-family: $font-button;

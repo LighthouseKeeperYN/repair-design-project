@@ -116,12 +116,13 @@ body {
   src: url(assets/fonts/futuramediumc.otf); }
 
 .instagram-side-bar {
+  width: 8.2rem;
+  height: calc(100vh - 8.3rem - 4.85rem);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 8.2rem;
-  height: calc(100vh - 8.3rem - 4.85rem);
-  background-color: #131313; }
+  background-color: #131313;
+  box-shadow: 0 -1px 0 0 #131313; }
   .instagram-side-bar__link {
     font-family: "FuturaDemiC", Helvetica, sans-serif;
     font-size: 1.4rem;
