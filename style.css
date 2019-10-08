@@ -119,6 +119,7 @@ body {
   width: 8.2rem;
   height: calc(100vh - 8.3rem - 4.85rem);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #131313;
@@ -133,6 +134,10 @@ body {
     transform: rotate(90deg); }
     .instagram-side-bar__link:hover {
       color: #fff; }
+  .instagram-side-bar__line {
+    margin-top: 5rem;
+    height: 5rem;
+    border-left: 0.15rem solid #E3B873; }
   @media (max-width: 66.25em) {
     .instagram-side-bar {
       display: none; } }
@@ -1264,7 +1269,8 @@ body {
   .site-menu__logo {
     color: #E3B873;
     font-family: "FuturaDemiC", Helvetica, sans-serif;
-    font-size: 1.4rem; }
+    font-size: 1.4rem;
+    line-height: 1.6rem; }
   .site-menu__tel-link:hover {
     color: #E3B873; }
   .site-menu--header {

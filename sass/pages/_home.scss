@@ -3,6 +3,7 @@
   height: calc(100vh - 8.3rem - 4.85rem);
 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 
@@ -22,6 +23,12 @@
     &:hover {
       color: $color-white;
     }
+  }
+
+  &__line {
+    margin-top: 5rem;
+    height: 5rem;
+    border-left: .15rem solid $color-primary;
   }
 
   @include respond(tab-port) {
