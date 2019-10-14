@@ -119,6 +119,7 @@ body {
   width: 8.2rem;
   height: calc(100vh - 8.3rem - 4.85rem);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: #131313;
@@ -133,6 +134,10 @@ body {
     transform: rotate(90deg); }
     .instagram-side-bar__link:hover {
       color: #fff; }
+  .instagram-side-bar__line {
+    margin-top: 5rem;
+    height: 5rem;
+    border-left: 0.15rem solid #E3B873; }
   @media (max-width: 66.25em) {
     .instagram-side-bar {
       display: none; } }
@@ -166,20 +171,22 @@ body {
     .section-landing {
       height: calc(100vh - 5.7rem); } }
   @media (max-width: 40.65em) {
-    .section-landing__heading-block {
-      padding: 0 1.8rem;
-      margin: 0 auto;
-      width: 100%; }
-    .section-landing__heading {
-      max-width: 90%;
-      margin-top: 8.5rem; }
-    .section-landing__text {
-      width: 90%;
-      font-size: 1.8rem;
-      line-height: 2.4rem; }
-    .section-landing__buttons {
-      height: 13rem;
-      width: 100%; } }
+    .section-landing {
+      max-height: 52rem; }
+      .section-landing__heading-block {
+        padding: 0 1.8rem;
+        margin: 0 auto;
+        width: 100%; }
+      .section-landing__heading {
+        max-width: 90%;
+        margin-top: 8.5rem; }
+      .section-landing__text {
+        width: 90%;
+        font-size: 1.8rem;
+        line-height: 2.4rem; }
+      .section-landing__buttons {
+        height: 13rem;
+        width: 100%; } }
 
 .section-completed-projects {
   height: 108rem;

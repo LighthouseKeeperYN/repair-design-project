@@ -81,7 +81,8 @@
   }
 
   @include respond(phone) {
-
+    max-height: 52rem;
+    
     &__heading-block {
       padding: 0 $padding-phone;
       margin: 0 auto;
