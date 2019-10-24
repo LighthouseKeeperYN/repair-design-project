@@ -2,7 +2,7 @@
   "name": "repair-design",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "watch": "node-sass sass/main.scss style.css -w",
     "compile": "node-sass sass/main.scss css/style-comp.css",
